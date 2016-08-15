@@ -10,6 +10,9 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
+import com.singledevs.drugstore.model.Product;
+import com.singledevs.drugstore.model.ProductPrice;
+
 public class HibernateConnectionManager implements ConnectionManager{
 
 	private SessionFactory sessionFactory;
@@ -28,8 +31,12 @@ public class HibernateConnectionManager implements ConnectionManager{
 			Configuration configuration = new Configuration();
 			configuration.configure("hibernate.cfg.xml").addProperties(properties);
 			
+			configuration.addAnnotatedClass(Product.class);
+			configuration.addAnnotatedClass(ProductPrice.class);
+			
 			registry = new StandardServiceRegistryBuilder()
 					.applySettings(configuration.getProperties())
+					.configure()
 					.build();
 			
 			if (sessionFactory == null){
