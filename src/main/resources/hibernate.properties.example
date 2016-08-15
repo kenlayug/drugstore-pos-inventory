@@ -1,4 +1,4 @@
-driverClassName=com.mysql.jdbc.Driver
-url=jdbc:mysql://localhost:3306/dbDrugstore?createDatabaseIfNotExist=true
-username=root
-password=kenpogi
+hibernate.connection.driver_class=com.mysql.jdbc.Driver
+hibernate.connection.url=jdbc:mysql://localhost:3306/dbDrugstore?createDatabaseIfNotExist=true
+hibernate.connection.username=root
+hibernate.connection.password=kenpogi
