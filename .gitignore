@@ -1,5 +1,4 @@
 *.class
-hibernate.cfg.xml
 *.jar
 target/
 pom.xml.tag
@@ -9,4 +8,5 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+hibernate.properties
 .mvn/timing.properties
