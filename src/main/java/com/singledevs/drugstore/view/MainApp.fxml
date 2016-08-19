@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="65.0" prefHeight="534.0" prefWidth="806.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-color: white;" text="Employee">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="7.0" layoutY="14.0" prefHeight="505.0" prefWidth="800.0" style="-fx-background-color: transparent;" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" styleClass="column-header" text="Name" />
+                            <TableColumn prefWidth="75.0" text="Address" />
+                              <TableColumn prefWidth="75.0" text="Contact No." />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-background-color: white;" text="Products">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab style="-fx-background-color: white;" text="Measurement">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white;" text="Discounts">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white;" text="Requirements">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4caf50" height="69.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="806.0" />
+      <Label layoutX="14.0" layoutY="18.0" text="Maintenance" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="36.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="683.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #388E3C;" styleClass=".button" stylesheets="@style.css" text="Actions" textFill="WHITE">
+        <items>
+          <MenuItem mnemonicParsing="false" style="" text="Add" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font name="Roboto Regular" size="18.0" />
+         </font>
+      </MenuButton>
+   </children>
+</AnchorPane>
